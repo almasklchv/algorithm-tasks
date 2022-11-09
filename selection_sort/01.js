@@ -35,26 +35,3 @@ function selectionSort(array) {
 console.log(selectionSort(['A', 'h', 'a', 'K', 'D', 'd', 'H', 'e', 'J', 'b', 'Y', 'm']));
 console.log(selectionSort([7, 4, 2, 3, 1, 5]))
 
-function countdown(i) {
-    console.log(i)
-    if (i <= 1) {
-        console.log('Completed!')
-        return;
-    } else if (i <= 91000 && i >= 3) {
-        setTimeout(function() {
-            countdown(i - 1)
-        }, 1)
-        
-    } else if (i == 2) {
-        setTimeout(function() {
-            countdown(i-1)
-        }, 10000000)
-    } 
-    else {
-            countdown(i - 1)
-        }
-        
-       
-    }
-
-countdown(100000);
